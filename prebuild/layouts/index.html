@@ -1,0 +1,43 @@
+{{ printf "<-- This page intentionally blank. -->" | safeHTML }}
+
+{{/* Constants. */}}
+{{ $contentSection := "googleSheetPages" }}
+{{ $contentTemplate := "templates/content.md" }}
+{{ $url := "https://api.sheety.co/af88c2d5ebb41851a7a9e66e5a81b459/staticPageGenerationHugo/staticPages" }}
+
+{{/* Get data using resources.GetRemote and transform.Unmarshal. */}}
+{{ $remote := resources.GetRemote $url }}
+{{ $data := $remote | transform.Unmarshal }}
+
+{{ if not $data }}
+  <div style="color:red;">
+    Unable to get or parse remote JSON data from
+    {{ $url }}
+  </div>
+{{ else }}
+  {{ with $r := resources.Get $contentTemplate }}
+    {{ if gt (len $data.staticPages) 0 }}
+      {{ range $data.staticPages }}
+        {{/* Map data fields to content and front matter. */}}
+        {{ $content := .content }}
+        {{ $frontMatter := dict
+          "_comment" "This content is auto-generated from google docs. Do not edit manually."
+          "title" .title
+          "description" .description
+          "date" .date
+          "draft" (or .draft false)
+        }}
+        {{/* Publish a page. */}}
+        {{ $ctx := dict "frontMatter" $frontMatter "content" $content }}
+        {{ $path := printf "%s/%s.md" $contentSection (.title | urlize) }}
+        {{ ($r | resources.ExecuteAsTemplate $path $ctx).Publish }}
+      {{ end }}
+    {{ else }}
+      <div style="color:red;">
+        The data set retrieved from {{ $url }} is empty
+      </div>
+    {{ end }}
+  {{ else }}
+    <div style="color:red;">Unable to get resource {{ $contentTemplate }}</div>
+  {{ end }}
+{{ end }}

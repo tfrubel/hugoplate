@@ -6,6 +6,7 @@
   "author": "zeon.studio",
   "scripts": {
     "dev": "hugo server",
+    "prebuild": "rm -rf prebuild/public && hugo -s prebuild && rm -rf content/english/googleSheetPages && mkdir -p content/english/googleSheetPages && cp -r prebuild/public/googleSheetPages/* content/english/googleSheetPages && hugo server",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "dev:example": "cd exampleSite && hugo server",

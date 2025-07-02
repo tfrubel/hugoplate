@@ -1,0 +1,6 @@
+disableKinds = ['rss','sitemap','taxonomy','term']
+
+[caches.getresource]
+dir = ':cacheDir/:project'
+maxAge = '1s'
+
