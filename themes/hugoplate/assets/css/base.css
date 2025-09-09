@@ -1,9 +1,5 @@
-html {
-  @apply text-base-sm md:text-base;
-}
-
 body {
-  @apply bg-background text-card-foreground font-sans font-normal leading-relaxed text-card-foreground;
+  @apply bg-background text-card-foreground font-sans font-normal leading-relaxed text-base;
 }
 
 h1,
