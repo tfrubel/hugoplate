@@ -11,5 +11,5 @@
 }
 
 .btn-outline-primary {
-  @apply border-border text-card-foreground hover:bg-foreground;
+  @apply border-border text-card-foreground hover:bg-foreground dark:hover:bg-card-foreground hover:text-primary;
 }

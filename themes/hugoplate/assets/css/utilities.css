@@ -4,7 +4,7 @@
 
 /* form style */
 @utility form-input {
-  @apply w-full rounded border-transparent bg-accent px-6 py-4 text-card-foreground placeholder:text-muted-foreground focus:border-primary  focus:ring-transparent;
+  @apply w-full rounded border-transparent bg-muted px-6 py-4 text-card-foreground placeholder:text-muted-foreground focus:border-primary  focus:ring-transparent;
 }
 
 @utility form-label {

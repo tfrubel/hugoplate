@@ -38,11 +38,11 @@
   @apply prose-img:max-w-full prose-img:rounded;
   @apply prose-strong:text-card-foreground;
   @apply prose-hr:border-border;
-  @apply prose-pre:rounded-lg prose-pre:bg-accent;
+  @apply prose-pre:rounded-lg prose-pre:bg-muted;
   @apply prose-li:text-card-foreground;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-accent prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-serif prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-card-foreground dark:prose-blockquote:border-primary dark:prose-blockquote:bg-card dark:prose-blockquote:text-card-foreground;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-muted prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-serif prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-card-foreground dark:prose-blockquote:border-primary dark:prose-blockquote:bg-card dark:prose-blockquote:text-card-foreground;
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:border-border prose-table:before:content-[""] dark:prose-table:before:border-border;
-  @apply prose-thead:border-border prose-thead:bg-accent dark:prose-thead:border-border dark:prose-thead:bg-card;
+  @apply prose-thead:border-border prose-thead:bg-muted dark:prose-thead:border-border dark:prose-thead:bg-card;
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-card-foreground dark:prose-th:text-card-foreground;
   @apply prose-tr:border-border dark:prose-tr:border-border;
   @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px] dark:prose-td:text-card-foreground;

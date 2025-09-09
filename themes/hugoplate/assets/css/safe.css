@@ -13,7 +13,7 @@ input#nav-toggle:checked ~ #nav-menu {
 
 /* swiper pagination */
 .swiper-pagination-bullet {
-  @apply !h-2.5 !w-2.5 !bg-accent !opacity-100 !bg-accent;
+  @apply !h-2.5 !w-2.5 !bg-muted !opacity-100 !bg-muted;
 }
 
 .swiper-pagination-bullet-active {
