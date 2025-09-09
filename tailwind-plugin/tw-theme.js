@@ -41,7 +41,7 @@ const getVars = (groups) => {
   groups.forEach(({ colors, prefix }) => {
     Object.entries(colors).forEach(([k, v]) => {
       const cssKey = k.replace(/_/g, "-");
-      vars[`--color-${prefix}${cssKey}`] = v;
+      // vars[`--color-${prefix}${cssKey}`] = v;
     });
   });
   return vars;

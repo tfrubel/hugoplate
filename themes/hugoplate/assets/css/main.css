@@ -1,11 +1,13 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
-@plugin "./tailwind-plugin/tw-theme";
 @plugin "./tailwind-plugin/tw-bs-grid";
 @source "hugo_stats.json";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@import "./typography.css";
+@import "theme.css";
 
 @import "./safe.css";
 @import "./utilities.css";
@@ -16,8 +18,8 @@
 
 @layer components {
   @import "./components.css";
-  @import "./navigation.css";
   @import "./buttons.css";
+  @import "./navigation.css";
 }
 
 @import "search.css";
