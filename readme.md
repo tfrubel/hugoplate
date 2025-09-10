@@ -1,4 +1,5 @@
 <h1 align="center">Hugo + Tailwind CSS Starter and Boilerplate</h1>
+<h3 align="center">Live Preview: https://servicehugoplate.netlify.app/</h3>
 
 <p align="center">Serviceplate is a template built with Hugo and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
 
