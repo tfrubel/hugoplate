@@ -1,5 +1,5 @@
+/* customize typography using below link and update root variables */
 /* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
 :root {
   --step--2: clamp(0.6944rem, 0.684rem + 0.0465vw, 0.72rem);
   --step--1: clamp(0.8333rem, 0.8061rem + 0.1212vw, 0.9rem);

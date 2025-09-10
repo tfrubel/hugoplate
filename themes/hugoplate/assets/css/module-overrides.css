@@ -62,3 +62,11 @@
 .gallery-slider {
   @apply !ml-0;
 }
+
+/* Search */
+.search-result-item-body > a {
+  @apply text-card-foreground;
+}
+.search-result-item-description {
+  @apply !text-muted;
+}

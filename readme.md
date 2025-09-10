@@ -1,6 +1,6 @@
 <h1 align="center">Hugo + Tailwind CSS Starter and Boilerplate</h1>
 
-<p align="center">Hugoplate is a free starter template built with Hugo and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
+<p align="center">Serviceplate is a template built with Hugo and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
 
 <p align="center">Made with ♥ by <a href="https://zeon.studio/"> Zeon Studio</a></p>
 <p align=center> If you find this project useful, please give it a ⭐ to show your support.</p>
@@ -9,20 +9,8 @@
 </h2>
 
 <p align="center">
-  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.126.0" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.126.0&color=f00&logo=hugo" />
-  </a>
-
-  <a href="https://github.com/zeon-studio/hugoplate/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/zeon-studio/hugoplate" alt="license">
-  </a>
-
-  <a href="https://github.com/zeon-studio/hugoplate">
-    <img src="https://img.shields.io/github/languages/code-size/zeon-studio/hugoplate" alt="code size">
-  </a>
-
-  <a href="https://github.com/zeon-studio/hugoplate/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/zeon-studio/hugoplate" alt="contributors">
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.144.0" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.144.0&color=f00&logo=hugo" />
   </a>
 </p>
 
@@ -43,6 +31,7 @@ We have included almost everything you need to start your Hugo project. Let's se
 - 📝 Write and update content in Markdown
 - 💬 Disqus Comment
 - 🔳 Syntax Highlighting
+- 🖌️ Shadcn/ui Design Tokens
 
 ### 📄 15+ Pre-designed Pages
 
@@ -81,8 +70,6 @@ We have included almost everything you need to start your Hugo project. Let's se
 
 ## 🚀 Getting Started
 
-First you need to [clone](https://github.com/zeon-studio/hugoplate) or [download](https://github.com/zeon-studio/hugoplate/archive/refs/heads/main.zip) the template repository, and then let's get started with the following process:
-
 ### ⚙️ Prerequisites
 
 To start using this template, you need to have some prerequisites installed on your machine.
@@ -90,14 +77,6 @@ To start using this template, you need to have some prerequisites installed on y
 - [Hugo Extended v0.144+](https://gohugo.io/installation/)
 - [Node v22+](https://nodejs.org/en/download/)
 - [Go v1.24+](https://go.dev/doc/install)
-
-### 👉 Project Setup
-
-We built this custom script to make your project setup easier. It will create a new Hugo theme folder and clone the Hugoplate theme into it. Then move the exampleSite folder into the root directory. So that you can start your Hugo server without going into the exampleSite folder. Use the following command to setup your project.
-
-```bash
-npm run project-setup
-```
 
 ### 👉 Install Dependencies
 
@@ -115,10 +94,6 @@ Start the development server using the following command.
 npm run dev
 ```
 
-### 🎬 Still Confused? Watch a Quick Video
-
-https://github.com/zeon-studio/hugoplate/assets/58769763/c260c0ae-91be-42ce-b8db-aa7f11f777bd
-
 ---
 
 ## 📝 Customization
@@ -127,7 +102,7 @@ This template has been designed with a lot of customization options in mind. You
 
 ### 👉 Site Config
 
-You can change the site title, base URL, language, theme, plugins, and more from the `hugo.toml` file.
+You can change the site title, base URL, language, plugins, and more from the `hugo.toml` file.
 
 ### 👉 Site Params
 
@@ -135,7 +110,11 @@ You can customize all the parameters from the `config/_default/params.toml` file
 
 ### 👉 Colors and Fonts
 
-You can change the colors and fonts from the `data/theme.json` file. This includes the primary color, secondary color, font family, and font size.
+You can change the colors and fonts from the `themes/<theme_name>/assets/css/theme.css` file. This file follows shadcn/ui design tokens, so you can easily change the colors and fonts.
+
+### 👉 Typography
+
+You can change the typography `themes/<theme_name>/assets/css/typography.css` file.
 
 ### 👉 Social Links
 
@@ -146,14 +125,6 @@ You can change the social links from the `data/social.json` file. Add your socia
 ## 🛠 Advanced Usage
 
 We have added some custom scripts to make your life easier. You can use these scripts to help you with your development.
-
-### 👉 Update Theme
-
-If you want to update the theme, then you can use the following command. It will update the theme to the latest version.
-
-```bash
-npm run update-theme
-```
 
 > **Note:** This command will work after running the `project-setup` script.
 
@@ -167,15 +138,7 @@ npm run update-modules
 
 ### 👉 Remove Dark Mode
 
-If you want to remove dark mode from your project, you can use the following command to remove dark mode from your project.
-
-```bash
-npm run remove-darkmode
-```
-
-> **Note:** This command will work before running the `project-setup` script. If you have already run the `project-setup` command, then you have to run `npm run theme-setup` first, and then you can run this command. Afterward, you can run `npm run project-setup` again.
-
----
+Removing dark mode is very simple. goto `themes/<theme_name>/assets/css/theme.css` and remove the dark mode section.
 
 ## 🚀 Build And Deploy
 
@@ -202,30 +165,6 @@ We have provided 5 different deploy platform configurations with this template, 
 And if you want to host some other hosting platforms. Then you can build your project, and you will get a `public` folder. that you can copy and paste on your hosting platform.
 
 > **Note:** You must change the `baseURL` in the `hugo.toml` file. Otherwise, your site will not work properly.
-
----
-
-## 🔒 Guide to Staying Compliant
-
-### 🐞 Reporting Issues
-
-We use GitHub Issues as the official bug tracker for this Template. Please search [existing issues](https://github.com/zeon-studio/hugoplate/issues). Someone may have already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/zeon-studio/hugoplate/issues).
-
-### 📝 License
-
-Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon.studio/)
-
-**Code License:** Released under the [MIT](https://github.com/zeon-studio/hugoplate/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
-
----
-
-## 🖼️ Showcase
-
-List of some projects people are building with [**Hugoplate**!](https://github.com/zeon-studio/hugoplate/discussions/207)
-Don't forget to add yours.
 
 ---
 
