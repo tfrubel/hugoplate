@@ -143,6 +143,9 @@ lazy = false
 link = "plugins/cookie.js"
 lazy = false
 [[params.plugins.js]]
+link = "plugins/vue/vue.3.5.21.global.min.js"
+lazy = true
+[[params.plugins.js]]
 link = "plugins/glightbox/glightbox.js"
 lazy = true
 [[params.plugins.js]]

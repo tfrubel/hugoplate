@@ -13,15 +13,25 @@
             </p>
             {{ with .button }}
               {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
+                <div class="flex gap-4 justify-center flex-wrap">
+                  <a
+                    class="btn btn-primary"
+                    href="{{ .link | absURL }}"
+                    {{ if strings.HasPrefix .link `http` }}
+                      target="_blank" rel="noopener"
+                    {{ end }}>
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                  <div id="testVueApp">
+                    <button
+                      class="btn btn-primary"
+                      @click="vanish"
+                      :style="{ opacity: opacity, display: opacity <= 0 ? 'none' : 'block'}">
+                      Click to Vanish
+                    </button>
+                  </div>
+                </div>
               {{ end }}
             {{ end }}
           </div>
