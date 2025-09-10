@@ -7,7 +7,7 @@
 }
 
 .btn-primary {
-  @apply border-primary bg-primary text-primary-foreground;
+  @apply border-primary bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80;
 }
 
 .btn-outline-primary {

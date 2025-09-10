@@ -1,14 +1,15 @@
 /* customize typography using below link and update root variables */
-/* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1240,16,1.25,5,2,&s=0.75,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
 :root {
-  --step--2: clamp(0.6944rem, 0.684rem + 0.0465vw, 0.72rem);
-  --step--1: clamp(0.8333rem, 0.8061rem + 0.1212vw, 0.9rem);
-  --step-0: clamp(1rem, 0.9489rem + 0.2273vw, 1.125rem);
-  --step-1: clamp(1.2rem, 1.1156rem + 0.375vw, 1.4063rem);
-  --step-2: clamp(1.44rem, 1.31rem + 0.5778vw, 1.7578rem);
-  --step-3: clamp(1.728rem, 1.536rem + 0.8532vw, 2.1973rem);
-  --step-4: clamp(2.0736rem, 1.7983rem + 1.2236vw, 2.7466rem);
-  --step-5: clamp(2.4883rem, 2.1018rem + 1.718vw, 3.4332rem);
+  --step--2: clamp(0.64rem, 0.7167rem + -0.099vw, 0.6944rem);
+  --step--1: clamp(0.8rem, 0.847rem + -0.0606vw, 0.8333rem);
+  --step-0: clamp(1rem, 1rem + 0vw, 1rem);
+  --step-1: clamp(1.2rem, 1.1795rem + 0.0909vw, 1.25rem);
+  --step-2: clamp(1.44rem, 1.3899rem + 0.2227vw, 1.5625rem);
+  --step-3: clamp(1.728rem, 1.6359rem + 0.4093vw, 1.9531rem);
+  --step-4: clamp(2.0736rem, 1.9231rem + 0.6687vw, 2.4414rem);
+  --step-5: clamp(2.4883rem, 2.2578rem + 1.0244vw, 3.0518rem);
 }
 
 @theme inline {
