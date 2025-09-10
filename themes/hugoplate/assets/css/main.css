@@ -21,11 +21,6 @@
   @import "./navigation.css";
 }
 
-@theme inline {
-  --font-primary: var(--font-serif);
-  --font-secondary: var(--font-sans);
-}
-
 @import "search.css";
 @import "social-share.css";
 @import "gallery-slider.css";

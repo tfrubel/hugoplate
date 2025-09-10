@@ -1,4 +1,5 @@
-<div class="bg-background dark:bg-darkmode-body">
+<div
+  class="rounded-xl border border-border bg-card text-card-foreground shadow p-6">
   {{ $image:= .Params.image }}
   {{ if $image }}
     {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}

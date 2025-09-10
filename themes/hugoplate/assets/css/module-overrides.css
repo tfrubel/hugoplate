@@ -70,3 +70,12 @@
 .search-result-item-description {
   @apply !text-muted;
 }
+
+/* mermaid */
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon,
+.node path {
+  @apply !fill-accent;
+}
