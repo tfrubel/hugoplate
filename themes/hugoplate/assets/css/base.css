@@ -1,5 +1,9 @@
+html {
+  @apply font-primary;
+}
+
 body {
-  @apply bg-background text-card-foreground font-primary font-normal leading-relaxed text-base;
+  @apply bg-background text-card-foreground font-normal leading-relaxed text-base;
 }
 
 h1,
