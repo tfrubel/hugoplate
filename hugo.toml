@@ -135,7 +135,10 @@ lazy = true
 # JS Plugins
 [[params.plugins.js]]
 link = "js/search.js"
-lazy = false
+lazy = true
+[[params.plugins.js]]
+link = "js/lazy.main.js"
+lazy = true
 [[params.plugins.js]]
 link = "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
 lazy = true
@@ -143,8 +146,8 @@ lazy = true
 link = "plugins/cookie.js"
 lazy = false
 [[params.plugins.js]]
-link = "plugins/vue/vue.3.5.21.global.min.js"
-lazy = true
+link = "https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.22/vue.global.min.js"
+lazy = false
 [[params.plugins.js]]
 link = "plugins/tweakcn/live-preview.min.js"
 lazy = true
