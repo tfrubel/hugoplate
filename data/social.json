@@ -6,9 +6,9 @@
       "link": "https://www.facebook.com/"
     },
     {
-      "name": "twitter",
-      "icon": "fab fa-twitter",
-      "link": "https://twitter.com/"
+      "name": "x",
+      "icon": "fa-brands fa-x-twitter",
+      "link": "https://x.com/"
     },
     {
       "name": "github",
